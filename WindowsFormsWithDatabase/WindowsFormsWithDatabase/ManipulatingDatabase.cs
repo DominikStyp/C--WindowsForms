@@ -28,21 +28,38 @@ namespace WindowsFormsWithDatabase
         }
 
         /// <summary>
-        /// Removing item row
-        /// </summary>
-        /// <param name="id"></param>
-        public void removeItemsRow(int id)
-        {
-            itemsTableAdapter.DeleteItemById(id);
-        }
-
-        /// <summary>
         /// 
         /// </summary>
         /// <param name="name"></param>
         public void addNewListsRow(string name)
         {
             listsTableAdapter.Insert(name);
+        }
+
+        public void editItemsRow(int id, string name)
+        {
+            DataSet1.ItemsRow ir = dataSet1.Items.FindById(id);
+            ir.Name = name;
+            itemsTableAdapter.Update(dataSet1);
+        }
+
+
+        public void editListsRow(byte id, string name)
+        {
+            DataSet1.ListsRow ir = dataSet1.Lists.FindById(id);
+            ir.Name = name;
+            listsTableAdapter.Update(dataSet1);
+        }
+
+
+
+        /// <summary>
+        /// Removing item row
+        /// </summary>
+        /// <param name="id"></param>
+        public void removeItemsRow(int id)
+        {
+            itemsTableAdapter.DeleteItemById(id);
         }
 
         /// <summary>

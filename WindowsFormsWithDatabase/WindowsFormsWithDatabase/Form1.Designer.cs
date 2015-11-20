@@ -31,7 +31,10 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.itemsList = new System.Windows.Forms.ListBox();
+            this.itemsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet1 = new WindowsFormsWithDatabase.DataSet1();
             this.listsList = new System.Windows.Forms.ListBox();
+            this.listsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.AddNewItem = new System.Windows.Forms.Button();
             this.AddNewList = new System.Windows.Forms.Button();
             this.removeSelectedItem = new System.Windows.Forms.Button();
@@ -43,12 +46,11 @@
             this.listsTableAdapter = new WindowsFormsWithDatabase.DataSet1TableAdapters.ListsTableAdapter();
             this.tableAdapterManager = new WindowsFormsWithDatabase.DataSet1TableAdapters.TableAdapterManager();
             this.itemsToolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.itemsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.listsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataSet1 = new WindowsFormsWithDatabase.DataSet1();
+            this.EditItem = new System.Windows.Forms.Button();
+            this.EditList = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.itemsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // itemsList
@@ -60,6 +62,17 @@
             this.itemsList.Name = "itemsList";
             this.itemsList.Size = new System.Drawing.Size(142, 316);
             this.itemsList.TabIndex = 0;
+            this.itemsList.SelectedIndexChanged += new System.EventHandler(this.itemsList_SelectedIndexChanged);
+            // 
+            // itemsBindingSource
+            // 
+            this.itemsBindingSource.DataMember = "Items";
+            this.itemsBindingSource.DataSource = this.dataSet1;
+            // 
+            // dataSet1
+            // 
+            this.dataSet1.DataSetName = "DataSet1";
+            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // listsList
             // 
@@ -73,9 +86,14 @@
             this.listsList.SelectedIndexChanged += new System.EventHandler(this.listsList_SelectedIndexChanged);
             this.listsList.MouseHover += new System.EventHandler(this.listsList_MouseHover);
             // 
+            // listsBindingSource
+            // 
+            this.listsBindingSource.DataMember = "Lists";
+            this.listsBindingSource.DataSource = this.dataSet1;
+            // 
             // AddNewItem
             // 
-            this.AddNewItem.Location = new System.Drawing.Point(13, 385);
+            this.AddNewItem.Location = new System.Drawing.Point(12, 389);
             this.AddNewItem.Name = "AddNewItem";
             this.AddNewItem.Size = new System.Drawing.Size(97, 23);
             this.AddNewItem.TabIndex = 2;
@@ -95,7 +113,7 @@
             // 
             // removeSelectedItem
             // 
-            this.removeSelectedItem.Location = new System.Drawing.Point(13, 414);
+            this.removeSelectedItem.Location = new System.Drawing.Point(12, 447);
             this.removeSelectedItem.Name = "removeSelectedItem";
             this.removeSelectedItem.Size = new System.Drawing.Size(125, 23);
             this.removeSelectedItem.TabIndex = 4;
@@ -105,9 +123,9 @@
             // 
             // removeSelectedList
             // 
-            this.removeSelectedList.Location = new System.Drawing.Point(363, 414);
+            this.removeSelectedList.Location = new System.Drawing.Point(345, 447);
             this.removeSelectedList.Name = "removeSelectedList";
-            this.removeSelectedList.Size = new System.Drawing.Size(109, 23);
+            this.removeSelectedList.Size = new System.Drawing.Size(127, 23);
             this.removeSelectedList.TabIndex = 5;
             this.removeSelectedList.Text = "Remove selected list";
             this.removeSelectedList.UseVisualStyleBackColor = true;
@@ -118,18 +136,18 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(12, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 13);
+            this.label1.Size = new System.Drawing.Size(62, 13);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Add new item:";
+            this.label1.Text = "List of items";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(331, 22);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 13);
+            this.label2.Size = new System.Drawing.Size(113, 13);
             this.label2.TabIndex = 7;
-            this.label2.Text = "Add new list:";
+            this.label2.Text = "List of lists (categories)";
             // 
             // notifyIcon1
             // 
@@ -153,24 +171,31 @@
             this.tableAdapterManager.ListsTableAdapter = this.listsTableAdapter;
             this.tableAdapterManager.UpdateOrder = WindowsFormsWithDatabase.DataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // itemsBindingSource
+            // EditItem
             // 
-            this.itemsBindingSource.DataMember = "Items";
-            this.itemsBindingSource.DataSource = this.dataSet1;
+            this.EditItem.Location = new System.Drawing.Point(12, 418);
+            this.EditItem.Name = "EditItem";
+            this.EditItem.Size = new System.Drawing.Size(103, 23);
+            this.EditItem.TabIndex = 8;
+            this.EditItem.Text = "Edit selected Item";
+            this.EditItem.UseVisualStyleBackColor = true;
+            this.EditItem.Click += new System.EventHandler(this.EditItem_Click);
             // 
-            // listsBindingSource
+            // EditList
             // 
-            this.listsBindingSource.DataMember = "Lists";
-            this.listsBindingSource.DataSource = this.dataSet1;
-            // 
-            // dataSet1
-            // 
-            this.dataSet1.DataSetName = "DataSet1";
-            this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.EditList.Location = new System.Drawing.Point(369, 414);
+            this.EditList.Name = "EditList";
+            this.EditList.Size = new System.Drawing.Size(103, 23);
+            this.EditList.TabIndex = 9;
+            this.EditList.Text = "Edit selected List";
+            this.EditList.UseVisualStyleBackColor = true;
+            this.EditList.Click += new System.EventHandler(this.EditList_Click);
             // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(484, 482);
+            this.Controls.Add(this.EditList);
+            this.Controls.Add(this.EditItem);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.removeSelectedList);
@@ -183,8 +208,8 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Resize += new System.EventHandler(this.MyForm_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.itemsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.listsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listsBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -213,6 +238,8 @@
         private System.Windows.Forms.BindingSource itemsBindingSource;
         private System.Windows.Forms.BindingSource listsBindingSource;
         private DataSet1 dataSet1;
+        private System.Windows.Forms.Button EditItem;
+        private System.Windows.Forms.Button EditList;
     }
 }
 

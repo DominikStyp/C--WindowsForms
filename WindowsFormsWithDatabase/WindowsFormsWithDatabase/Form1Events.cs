@@ -25,6 +25,13 @@ namespace WindowsFormsWithDatabase
             refreshItemsList();
         }
 
+
+        private void itemsList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            currentChedkedItemId = getCheckedItemId();
+        }
+
+
         private void AddNewList_Click(object sender, EventArgs e)
         {
             new AddNewList(this).Show();
@@ -41,6 +48,26 @@ namespace WindowsFormsWithDatabase
         }
 
 
+
+        private void EditList_Click(object sender, EventArgs e)
+        {
+            if (currentCheckedListId < 0)
+            {
+                MessageBox.Show("First you have to choose list to edit it.\nIf there is none, you must create it.");
+                return;
+            }
+            new EditList(this).Show();
+        }
+
+        private void EditItem_Click(object sender, EventArgs e)
+        {
+            if (currentChedkedItemId < 0)
+            {
+                MessageBox.Show("First you have to choose item to edit it.\nIf there is none, you must create it.");
+                return;
+            }
+            new EditItem(this).Show();
+        }
 
         private void itemsList_MouseHover(object sender, EventArgs e)
         {

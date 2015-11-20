@@ -9,3 +9,5 @@ c:\users\dominik\documents\visual studio 2015\Projects\WindowsFormsWithDatabase\
 c:\users\dominik\documents\visual studio 2015\Projects\WindowsFormsWithDatabase\WindowsFormsWithDatabase\obj\Debug\WindowsFormsWithDatabase.pdb
 C:\Users\Dominik\Documents\Visual Studio 2015\Projects\WindowsFormsWithDatabase\WindowsFormsWithDatabase\obj\Debug\WindowsFormsWithDatabase.AddNewList.resources
 C:\Users\Dominik\Documents\Visual Studio 2015\Projects\WindowsFormsWithDatabase\WindowsFormsWithDatabase\obj\Debug\WindowsFormsWithDatabase.AddNewItem.resources
+C:\Users\Dominik\Documents\Visual Studio 2015\Projects\WindowsFormsWithDatabase\WindowsFormsWithDatabase\obj\Debug\WindowsFormsWithDatabase.EditItem.resources
+C:\Users\Dominik\Documents\Visual Studio 2015\Projects\WindowsFormsWithDatabase\WindowsFormsWithDatabase\obj\Debug\WindowsFormsWithDatabase.EditList.resources

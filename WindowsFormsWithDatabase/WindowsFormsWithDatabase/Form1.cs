@@ -15,6 +15,7 @@ namespace WindowsFormsWithDatabase
     {
         public readonly ManipulatingDatabase manipulatingDatabase;
         public byte currentCheckedListId = 0;
+        public int currentChedkedItemId = 0;
 
         public Form1()
         {
@@ -103,11 +104,12 @@ namespace WindowsFormsWithDatabase
             MessageBox.Show(d.ToString());
         }
 
-        private bool confirmBox(string title, string text)
+        public static bool confirmBox(string title, string text)
         {
             DialogResult dr = MessageBox.Show(text, title, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Information);
             return dr == DialogResult.Yes;
         }
+
     }
 
 
