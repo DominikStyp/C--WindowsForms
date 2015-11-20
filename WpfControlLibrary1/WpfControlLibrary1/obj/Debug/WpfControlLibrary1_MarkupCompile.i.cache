@@ -4,7 +4,7 @@
 library
 C#
 .cs
-c:\users\dominik\documents\visual studio 2015\Projects\WpfControlLibrary1\WpfControlLibrary1\obj\Debug\
+C:\Users\Dominik\Documents\Visual Studio 2015\Projects\WpfControlLibrary1\WpfControlLibrary1\obj\Debug\
 WpfControlLibrary1
 none
 false
@@ -16,5 +16,5 @@ DEBUG;TRACE
 13-1142990016
 UserControl1.xaml;
 
-True
+False
 
