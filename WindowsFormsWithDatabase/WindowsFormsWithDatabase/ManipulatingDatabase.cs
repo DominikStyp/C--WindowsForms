@@ -52,7 +52,7 @@ namespace WindowsFormsWithDatabase
 
         public void removeListsRow(byte id)
         {
-            listsTableAdapter.DeleteListById(id);
+            listsTableAdapter.DeleteByListId(id);
         }
     }
 }

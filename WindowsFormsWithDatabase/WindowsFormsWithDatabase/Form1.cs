@@ -60,11 +60,14 @@ namespace WindowsFormsWithDatabase
         // only way to refresh ListBox in case data in database has changed is another assign binding source to DataSource
         public void refreshListsList()
         {
-            listsList.DataSource = listsBindingSource;
+            //listsList.DataSource = listsBindingSource;
             // Due to DataTable throws InvalidConstraintException on .Fill (Foreign key problem)
-            this.dataSet1.Lists.ChildRelations.Clear();
-            this.dataSet1.Lists.Constraints.Clear();
+            //this.dataSet1.Lists.ChildRelations.Clear();
+            //this.dataSet1.Lists.Load(this.listsTableAdapter.GetData())
+            //this.dataSet1.Lists.ChildRelations.Clear();
+            this.dataSet1.EnforceConstraints = false;
             this.listsTableAdapter.Fill(this.dataSet1.Lists);
+            this.dataSet1.EnforceConstraints = true;
         }
  
         public byte getCheckedListId()
