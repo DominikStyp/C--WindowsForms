@@ -1,0 +1,12 @@
+c:\users\dominik\documents\visual studio 2015\Projects\WpfControlLibrary1\WpfControlLibrary1\bin\Debug\WpfControlLibrary1.dll
+c:\users\dominik\documents\visual studio 2015\Projects\WpfControlLibrary1\WpfControlLibrary1\bin\Debug\WpfControlLibrary1.pdb
+c:\users\dominik\documents\visual studio 2015\Projects\WpfControlLibrary1\WpfControlLibrary1\obj\Debug\WpfControlLibrary1.csprojResolveAssemblyReference.cache
+c:\users\dominik\documents\visual studio 2015\Projects\WpfControlLibrary1\WpfControlLibrary1\obj\Debug\UserControl1.g.cs
+c:\users\dominik\documents\visual studio 2015\Projects\WpfControlLibrary1\WpfControlLibrary1\obj\Debug\WpfControlLibrary1_MarkupCompile.cache
+c:\users\dominik\documents\visual studio 2015\Projects\WpfControlLibrary1\WpfControlLibrary1\obj\Debug\WpfControlLibrary1_MarkupCompile.lref
+c:\users\dominik\documents\visual studio 2015\Projects\WpfControlLibrary1\WpfControlLibrary1\obj\Debug\UserControl1.baml
+c:\users\dominik\documents\visual studio 2015\Projects\WpfControlLibrary1\WpfControlLibrary1\obj\Debug\WpfControlLibrary1.g.resources
+c:\users\dominik\documents\visual studio 2015\Projects\WpfControlLibrary1\WpfControlLibrary1\obj\Debug\WpfControlLibrary1.Properties.Resources.resources
+c:\users\dominik\documents\visual studio 2015\Projects\WpfControlLibrary1\WpfControlLibrary1\obj\Debug\WpfControlLibrary1.csproj.GenerateResource.Cache
+c:\users\dominik\documents\visual studio 2015\Projects\WpfControlLibrary1\WpfControlLibrary1\obj\Debug\WpfControlLibrary1.dll
+c:\users\dominik\documents\visual studio 2015\Projects\WpfControlLibrary1\WpfControlLibrary1\obj\Debug\WpfControlLibrary1.pdb

@@ -1,0 +1,11 @@
+c:\users\dominik\documents\visual studio 2015\Projects\WindowsFormsWithDatabase\WindowsFormsWithDatabase\bin\Debug\WindowsFormsWithDatabase.exe.config
+c:\users\dominik\documents\visual studio 2015\Projects\WindowsFormsWithDatabase\WindowsFormsWithDatabase\bin\Debug\WindowsFormsWithDatabase.exe
+c:\users\dominik\documents\visual studio 2015\Projects\WindowsFormsWithDatabase\WindowsFormsWithDatabase\bin\Debug\WindowsFormsWithDatabase.pdb
+c:\users\dominik\documents\visual studio 2015\Projects\WindowsFormsWithDatabase\WindowsFormsWithDatabase\obj\Debug\WindowsFormsWithDatabase.csprojResolveAssemblyReference.cache
+c:\users\dominik\documents\visual studio 2015\Projects\WindowsFormsWithDatabase\WindowsFormsWithDatabase\obj\Debug\WindowsFormsWithDatabase.Form1.resources
+c:\users\dominik\documents\visual studio 2015\Projects\WindowsFormsWithDatabase\WindowsFormsWithDatabase\obj\Debug\WindowsFormsWithDatabase.Properties.Resources.resources
+c:\users\dominik\documents\visual studio 2015\Projects\WindowsFormsWithDatabase\WindowsFormsWithDatabase\obj\Debug\WindowsFormsWithDatabase.csproj.GenerateResource.Cache
+c:\users\dominik\documents\visual studio 2015\Projects\WindowsFormsWithDatabase\WindowsFormsWithDatabase\obj\Debug\WindowsFormsWithDatabase.exe
+c:\users\dominik\documents\visual studio 2015\Projects\WindowsFormsWithDatabase\WindowsFormsWithDatabase\obj\Debug\WindowsFormsWithDatabase.pdb
+C:\Users\Dominik\Documents\Visual Studio 2015\Projects\WindowsFormsWithDatabase\WindowsFormsWithDatabase\obj\Debug\WindowsFormsWithDatabase.AddNewList.resources
+C:\Users\Dominik\Documents\Visual Studio 2015\Projects\WindowsFormsWithDatabase\WindowsFormsWithDatabase\obj\Debug\WindowsFormsWithDatabase.AddNewItem.resources
